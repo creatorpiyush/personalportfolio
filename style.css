@@ -147,7 +147,9 @@ a.active {
     p {
         font-size: 14pt;
     }
-
+    a.active {
+        background-color: rgb(243, 35, 35);
+    }
 }
 
 @media screen and (max-width:670px) {
@@ -213,5 +215,8 @@ a.active {
         width: 70%;
         border-bottom: #fff solid 5px;
         border-radius: 50%;
+    }
+    a.active {
+        background-color: rgb(243, 35, 35);
     }
 }
