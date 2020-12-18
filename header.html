@@ -1,0 +1,109 @@
+<header id="home">
+
+    <div class="navbar-fixed">
+        <nav class="transparent navbar-fixed-top">
+            <div class="container">
+                <div class="nav-wrapper">
+                    <a href="#" class="brand-logo">Piyush Anand</a>
+                    <a href="#" data-target="mobile-demo" class="sidenav-trigger right"><i class="material-icons"
+                            style="font-size: 25pt;">sort</i></a>
+                    <ul id="nav-mobile" class="right hide-on-med-and-down">
+                        <li><a href="#home" class="white-text" style="font-size: 15pt;">Home</a></li>
+                        <li><a href="#about-me" class="white-text" style="font-size: 15pt;">About Me</a></li>
+                        <li><a href="#my-work" class="white-text" style="font-size: 15pt;">My Work</a></li>
+                        <li><a href="#" class="white-text" style="font-size: 15pt;">Get in Touch</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </div>
+
+    <ul class=" sidenav" id="mobile-demo">
+        <li><a href="#home" style="font-size: 15pt;">Home</a></li>
+        <li><a href="#about-me" style="font-size: 15pt;">About Me</a></li>
+        <li><a href="#my-work" style="font-size: 15pt;">My Work</a></li>
+        <li><a href="#" style="font-size: 15pt;">Get in Touch</a></li>
+    </ul>
+
+    <div id="home" class="section scrollspy">
+        <div class="container">
+            <div class="valign-wrapper about-padding">
+                <div class="row">
+                    <div class="col s12 m12 l4 center-on-small-only image-me">
+                        <img class="responsive-img about-image circle" src="./img/me.png" alt="">
+                    </div>
+                    <div class="col s12 m12 l8">
+                        <div class="container content-about">
+                            <div class="row">
+                                <div class="col s12 m12 l12">
+                                    <h3 style="margin-right: 0;">
+                                        I'M
+                                    </h3>
+                                    <h1 class="line-1 anim-typewriter center-align name-heading indigo-text">Piyush
+                                        Anand </h1>
+                                </div>
+                            </div>
+                            <div class="col s13 m12 l13">
+                                <div class="text-width">
+                                    <p id="writing">
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col s12 m12 l12 center-align" style=" padding-top: 11%;">
+                        <a href="#about-me"
+                            class="btn-floating waves-effect waves-light btn-large pulse hide-on-small-only purple">
+                            <i class="material-icons" style="font-size: 40pt;">keyboard_arrow_down
+                            </i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</header>
+
+<!--Import Google Icon Font-->
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+<script src="https://kit.fontawesome.com/07ceacc377.js" crossorigin="anonymous"></script>
+
+<!-- Compiled and minified CSS -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+
+<link rel="stylesheet" href="./style.css">
+
+<link rel="stylesheet" href="./skill-circle.css">
+
+<script src="./script.js"></script>
+
+<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+<!-- Compiled and minified JavaScript -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js">
+</script>
+
+<!-- jQuery for materialize -->
+<script>
+    $(document).ready(function () {
+        $('.sidenav').sidenav();
+        $('.parallax').parallax();
+        $('.scrollspy').scrollSpy();
+        // $('#content').pushpin({
+        //     top: $('#content').offset().top
+        // });
+        $('.scrollspy').scrollSpy({
+            scrollOfffset: 200,
+            activeClass: 'active'
+        });
+    });
+
+    $(function () {
+        $(document).scroll(function () {
+            var $nav = $(".navbar-fixed-top");
+            $nav.toggleClass('scrolled', $(this).scrollTop() > $nav
+                .height());
+        });
+    });
+</script>

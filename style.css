@@ -1,0 +1,217 @@
+* {
+    color: #fff;
+}
+
+body {
+    background-image: linear-gradient(to right, #000000, #434343);
+}
+
+header {
+    background-image: linear-gradient(to right, #000000, #434343);
+    background-size: cover;
+    min-height: 100vh;
+}
+
+#about-me {
+    padding-top: 0px;
+}
+
+p {
+    font-size: 15pt;
+}
+
+h3 {
+    display: inline;
+}
+
+h1 {
+    display: inline;
+}
+
+nav .brand-logo {
+    color: rgb(223, 184, 56);
+}
+
+.sidenav {
+    padding-top: 50px;
+}
+
+@keyframes caret {
+    50% {
+        border-color: transparent;
+    }
+}
+
+.about-image {
+    height: 120vh;
+    width: 80vh;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.about-padding {
+    padding-top: 10%;
+}
+
+.content-about {
+    padding-top: 8%;
+    text-align: center;
+}
+
+#writing {
+    margin-top: 2%;
+}
+
+.gfg { 
+    width:auto; 
+    text-align:center; 
+    padding:20px; 
+} 
+.img { 
+    width: 100%; 
+    height: 100%; 
+    object-fit: contain; 
+} 
+
+.bottom-line {
+    padding: auto;
+    margin: auto;
+    width: 37%;
+    border-bottom: #fff solid 5px;
+    border-radius: 50%;
+}
+
+.navbar-fixed-top.scrolled {
+    background-color: rgb(93, 80, 80) !important;
+    transition: background-color 200ms linear;
+}
+
+.navbar-fixed-top.scrolled .nav-link {
+    color: #555;
+}
+
+.myskill-padding {
+    padding-left: 25%;
+}
+
+a.active {
+    background-color: #222;
+}
+
+.zoom {
+    padding: 10%px;
+    /* background-color: green; */
+    transition: transform .2s;
+    /* Animation */
+    margin: 0 auto;
+}
+
+.zoom:hover {
+    transform: scale(1.5);
+    /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+}
+
+@media screen and (max-width:1000px) {
+    .sidenav {
+        width: 350px;
+    }
+
+    .about-image {
+        height: 80%;
+        width: 80%;
+    }
+
+    .name-heading {
+        font-size: 3.5rem;
+        margin-bottom: 0%;
+    }
+
+    .about-image {
+        height: 50%;
+        width: 50%;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .about-padding {
+        padding-top: 0%;
+    }
+
+    .content-about {
+        padding-top: 2%;
+        text-align: center;
+    }
+
+    p {
+        font-size: 14pt;
+    }
+
+}
+
+@media screen and (max-width:670px) {
+    .sidenav {
+        width: 200px;
+    }
+
+    h3 {
+        display: none;
+        font-size: 25px;
+    }
+
+    h1 {
+        display: block;
+    }
+
+    nav .brand-logo {
+        left: 27vw;
+    }
+
+    .ds-size {
+        font-size: 1rem
+    }
+
+    .about-image {
+        height: 50%;
+        width: 50%;
+    }
+
+    .name-heading {
+        margin-top: 7.5%;
+        font-size: 2.5rem;
+        margin-bottom: 0%;
+    }
+
+    .about-padding {
+        padding-top: 0%;
+    }
+
+    .content-about {
+        padding-top: 1%;
+        text-align: justify;
+    }
+
+    .text-width {
+        width: 100%;
+    }
+
+    #writing {
+        margin-top: 1%;
+    }
+
+    p {
+        font-size: 12pt;
+    }
+
+    .myskill-padding {
+        padding-left: 5%;
+    }
+
+    .bottom-line {
+        margin: auto;
+        width: 70%;
+        border-bottom: #fff solid 5px;
+        border-radius: 50%;
+    }
+}

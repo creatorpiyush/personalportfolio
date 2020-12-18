@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Piyush Anand</title>
+
+    <!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    <script src="https://kit.fontawesome.com/07ceacc377.js" crossorigin="anonymous"></script>
+
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+
+    <link rel="stylesheet" href="./style.css">
+
+    <link rel="stylesheet" href="./skill-circle.css">
+
+
+
+</head>
+
+<body>
+
+    <div id="home"></div>
+    <div id="about"></div>
+    <div id="work"></div>
+    <div id="contact"></div>
+
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js">
+    </script>
+    <!-- custom JS -->
+    <script src="./script.js"></script>
+    <script src="./content.js"></script>
+
+    <!-- jQuery for materialize -->
+    <script>
+        $(document).ready(function () {
+            $('.sidenav').sidenav();
+            $('.parallax').parallax();
+            $('.scrollspy').scrollSpy();
+            $('.tooltipped').tooltip();
+            // $('#content').pushpin({
+            //     top: $('#content').offset().top
+            // });
+            $('.scrollspy').scrollSpy({
+                scrollOfffset: 200,
+                activeClass: 'active'
+            });
+        });
+
+        $(function () {
+            $(document).scroll(function () {
+                var $nav = $(".navbar-fixed-top");
+                $nav.toggleClass('scrolled', $(this).scrollTop() > $nav
+                    .height());
+            });
+        });
+    </script>
+
+</body>
+
+</html>
